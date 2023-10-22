@@ -1,0 +1,132 @@
+a {
+    text-decoration: none;
+}
+html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.css-button-sliding-to-left--sky {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    z-index: 0;
+    background: transparent;
+    overflow: hidden;
+    border: 2px solid #4433ff;
+    color: #4433ff;
+}
+
+.css-button-sliding-to-left--sky:hover {
+    color: #fff;
+}
+
+.css-button-sliding-to-left--sky:hover:after {
+    width: 100%;
+}
+
+.css-button-sliding-to-left--sky:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: #4433ff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.bg {
+    background-color: #1f1f1f;
+    background-image: url('https://cn-sy1.rains3.com/icyblog/fishclient/3128AD9762076012D51844FC2E9C6056.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    font-family: sans-serif;
+    backdrop-filter: blur(15px);
+}
+.bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+h1, h3, img {
+    text-align: center;
+    /*font-family: Apple;*/
+}
+h1.pch1 {
+    font-size: 80px;
+    background-image: linear-gradient(220deg, #de7fbb, #9de8fd);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+h3.pch3 {
+    font-size:  xx-large;
+    color: azure;
+}
+.css-button-arrow--blue {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    overflow: hidden;
+    border-radius: 5px;
+    border: none;
+    background-color: #3d348b
+}
+.css-button-arrow--blue:hover {
+    border-radius: 5px;
+    padding-right: 24px;
+    padding-left:8px;
+}
+.css-button-arrow--blue:hover:after {
+    opacity: 1;
+    right: 10px;
+}
+.css-button-arrow--blue:after {
+    content: "\00BB";
+    position: absolute;
+    opacity: 0;
+    font-size: 20px;
+    line-height: 40px;
+    top: 0;
+    right: -20px;
+    transition: 0.4s;
+}
+@font-face {
+    font-family: 'Apple';
+    src: url('https://static.icy.asia/armolab/Apple.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
